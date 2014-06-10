@@ -9,6 +9,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
   def update
+    session[:user_id] = params[:id]
     @user = User.find(params[:id])
     @user.name = params[:user][:name]
     @user.save

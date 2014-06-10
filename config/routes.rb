@@ -1,7 +1,10 @@
 Hoge::Application.routes.draw do
-  get "users/index"
-
-  get "users/show"
+  resources :users
+#  get "users/new"
+#  get "users/index"
+#  get "users/show"
+#  get "users/:id/edit" => "users#edit"
+#  post "users" => "users#create"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
